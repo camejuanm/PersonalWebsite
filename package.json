@@ -4,9 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode development",
-    "start": "npm run build && webpack-dev-server --mode development --open",
-    "emu": "firebase emulators:start",
+    "start": "webpack serve --mode development",
+    "build":"npx webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -15,7 +14,6 @@
   "devDependencies": {
     "autoprefixer": "^10.4.12",
     "css-loader": "^6.7.1",
-    "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
     "node-sass": "^7.0.3",
     "sass-loader": "^13.1.0",
