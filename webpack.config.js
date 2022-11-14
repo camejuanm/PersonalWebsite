@@ -1,7 +1,9 @@
 
-const path = require('path')
-const loader = require('sass-loader')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const path = require('path');
+const loader = require('sass-loader');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 
 module.exports = {
     mode: "development",
@@ -22,5 +24,12 @@ module.exports = {
                 use: ['style-loader','css-loader', 'sass-loader']
              }
         ]
-    }
-}
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            inject: 'body',
+            template: './src/html/index.html',
+            filename: 'index.html'
+        })
+    ]
+};

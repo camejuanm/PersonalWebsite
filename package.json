@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack serve --mode development",
-    "build":"npx webpack --config webpack.config.js",
+    "start": "webpack --mode development",
+    "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -27,6 +27,7 @@
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
     "firebase": "^9.12.1",
+    "html-webpack-plugin": "^5.5.0",
     "postcss-scss": "^4.0.5"
   }
 }
