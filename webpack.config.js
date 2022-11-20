@@ -10,7 +10,8 @@ module.exports = {
   entry: './src/js/main.js',
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    assetModuleFilename: "assets/images/[name].[hash][ext]",
   },
   devtool: 'eval-source-map',
   devServer: {
@@ -24,18 +25,25 @@ module.exports = {
         test: /\.(s(a|c)ss)$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
-
       {
-        test: /\.(gif|png|jpe?g)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-            }
-          }
-        ]
-      },
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource'
+    },
+
+    //   {
+    //     test: /\.(gif|png|jpe?g)$/,
+    //     use: [
+    //       {
+    //         loader: 'file-loader',
+    //         options: {
+    //           name: '[name].[ext]',
+    //           publicPath: 'assets',
+    //           outputPath: 'assets/images',
+    //           esModule: false
+    //         }
+    //       }
+    //     ]
+    //   },
 
       {
         test: /\.html$/,
