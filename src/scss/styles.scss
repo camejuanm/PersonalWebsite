@@ -1,1 +1,23 @@
 @import "~bootstrap/scss/bootstrap";
+
+@include media-breakpoint-down(sm) {
+    footer {
+        font-size: 12px;
+    }
+}
+
+// @media (prefers-color-scheme: dark) {
+//     body.dark-scheme {
+//         background: #333;
+//         color: white;
+//     }
+// }
+
+// @media (prefers-color-scheme: light) {
+//     body.light-scheme {
+//         background: white;
+//         color: #555;
+//     }
+
+// }
+
