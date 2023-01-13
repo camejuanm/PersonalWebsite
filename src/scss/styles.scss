@@ -6,19 +6,26 @@
     }
 }
 
-@mixin color-scheme($name) {
-    @media (prefers-color-scheme: #{$name}) {
-        @content;
-    }
-}
-body {
-    @include color-scheme(dark) {
-      // Insert dark mode styles here
-      background: #333;
-      color: white;
-    }
-}
-nav, footer {
+nav,
+footer {
     background-color: $gray-200;
+}
+
+@media (prefers-color-scheme: light) {
+    /* styles for light mode */
+    nav,
+    footer {
+      background-color: $gray-200;
+      color: $gray-800;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    /* styles for dark mode */
+    nav,
+    footer {
+      background-color: $gray-800;
+      color: $gray-200;
+    }
   }
 

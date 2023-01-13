@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
+    <!-- <meta name="color-scheme" content="light dark" /> -->
     <!-- Optional Meta Theme Color is also supported on Safari and Chrome -->
-    <meta
+    <!-- <meta
       name="theme-color"
       content="#333"
-      media="(prefers-color-scheme: light)" />
+      media="(prefers-color-scheme: light)" /> -->
     <meta
       name="theme-color"
       content="white"
-      media="(prefers-color-scheme: dark)" />
+      media="(prefers-color-scheme: dark)" /> 
     <title>camejuanm's site</title>
   </head>
 
-  <body>
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+  <body class="pb-3">
+ <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
       <symbol id="bootstrap" viewBox="0 0 118 94">
         <title>Bootstrap</title>
         <path
@@ -68,10 +68,7 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Play a game!</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
+              <a class="nav-link" href="https://docs.google.com/document/d/1sR2kJw45lRr0QK2mkK7jSkr9PyXaEwu5ShRidimUiTY/edit?usp=sharing">My Resume</a>
             </li>
           </ul>
           <!-- <form class="d-flex" role="search">
@@ -85,6 +82,7 @@
       <section class="row">
         <div class="col mb-2">
           <h1>Hi there! Welcome to my website.</h1>
+
           <h6>It's under construction.</h6>
         </div>
       </section>
@@ -106,10 +104,12 @@
           <!-- <h6>Checkout this new section though, it's called <i>"Juan's thoughts right now"</i><span><sub> (pending a better idea for its name)</sub></span> :</h6> -->
           <figure class="text-center pt-2">
             <blockquote class="blockquote">
-              <p>"I really need to finish this website but I then I found Svelte. <br>So I guess this is another "pending" side project while I go on learning Svelte"</p>
+              <p>
+                "Now with dark mode! Try toggling your system theme color, or you can try changing 'prefers-color-scheme' setting."
+              </p>
             </blockquote>
             <figcaption class="blockquote-footer">
-              <i>My thoughts right now</i> 
+              <i>Message for visitors</i>
             </figcaption>
           </figure>
         </div>
@@ -143,7 +143,7 @@
           </li>
           <li class="ms-3">
             <a
-              class="text"
+              class="text" style="fill: var(--bs-body-color);"
               href="https://www.instagram.com/camejuanm/"
               target="_blank"
               ><svg class="bi" width="1.5em" height="1.5em">
