@@ -19,7 +19,7 @@ module.exports = merge(common, {
 
       allowedHosts: "all",
 
-      port: 3000,
+      port: 3001,
 
     },
 
