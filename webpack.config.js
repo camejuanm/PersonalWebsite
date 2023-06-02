@@ -1,4 +1,4 @@
-
+// Old config, not going to be used anymore after v2.0
 const path = require('path');
 const loader = require('sass-loader');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -16,7 +16,7 @@ module.exports = {
   devtool: 'eval-source-map',
   devServer: {
     static: path.resolve(__dirname, 'dist'),
-    port: 8080,
+    port: 3000,
     hot: true
   },
   module: {

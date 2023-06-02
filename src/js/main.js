@@ -79,3 +79,8 @@ window.addEventListener('DOMContentLoaded', () => {
 //     //   console.log(`Dark mode is ${darkModeOn ? '🌒 on' : '☀️ off'}.`);
 //     //   darkModeOn ? document.getElementsByTagName('figcaption').innerHTML = "Don't be naugthy, dark mode is not supported!" : document.getElementsByTagName('figcaption').innerHTML = "Good boi!"
 // });
+if (process.env.NODE_ENV !== 'production') {
+
+  console.log('Looks like we are in development mode!');
+
+}
